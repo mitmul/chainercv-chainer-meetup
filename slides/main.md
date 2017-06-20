@@ -22,7 +22,7 @@ layout: false
 
 .center.img[![chainercv screenshot](images/screenshot.png)]
 
-* An add-on package built on top of Chainer for computer vision 
+* An add-on package built on top of Chainer for computer vision
 * Github page:  [https://github.com/chainer/chainercv](https://github.com/chainer/chainercv)
 * Works with `chainer>=2.0.0` (also works for Chainer v1)
 * MIT License
@@ -37,7 +37,7 @@ layout: false
 * Network implementations and training scripts
   * Object Detection (Faster R-CNN, SSD)
   * Semantic Segmentation (SegNet)
-* Variety of tool sets 
+* Variety of tool sets
 * Dataset Loader (e.g. PASCAL VOC) and data-augmentation tools
 * Visualization
 * Evaluation
@@ -45,7 +45,7 @@ layout: false
 
 <!--.center.img-33[![Right-algined text](images/faster_rcnn_image_000008.png)]-->
 
-.center.img-90[![](images/example_outputs_first_page_1.png)]
+.center.img-60[![](images/example_outputs_first_page_1.png)]
 
 ---
 
@@ -129,7 +129,7 @@ Internally, `predict` does ...
 2. Forward the images through the network
 3. Post-processing outputs by removing overlapping boxes
 
-.center.img-75[![](images/predict_doc.png)]
+.center.img-60[![](images/predict_doc.png)]
 
 
 ---
@@ -140,11 +140,9 @@ Internally, `predict` does ...
 
 For example, scene graph generation depends
 on object detection algorithms to localize objects in images.
+.center.img-60[![](images/scene_graph.png)]
 
-
-.center.img-75[![](images/scene_graph.png)]
-
-.small[Scene Graph Generation by Iterative Message Passing. Xu et.al., CVPR2017] 
+.small[Scene Graph Generation by Iterative Message Passing. Xu et.al., CVPR2017]
 
 ---
 
@@ -250,7 +248,7 @@ are modified based on the flip.
 
 * Code is built on top of Matplotlib
 
-.img[![sample_visualization](images/vis_visualization.png)]
+.center.img-60[![sample_visualization](images/vis_visualization.png)]
 
 ---
 
@@ -269,7 +267,7 @@ trainer.extend(
     chainercv.extension.DetectionVOCEvaluator(iterator, detection_model),
     trigger=(1, 'epoch'))
 ```
- 
+
 ```python
 evaluator = chainercv.extension.DetectionVOCEvaluator(
         iterator, detection_model)
