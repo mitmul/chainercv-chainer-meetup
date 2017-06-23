@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 
     <script src="./remark-latest.min.js" type="text/javascript"></script>
+    <script src="./mermaid.min.js"></script>
+    <link rel="stylesheet" href="./mermaid.css">
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="lib/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <!-- I added the following line -->
@@ -64,7 +67,22 @@
           // Disable counting of incremental slides in the slide counting
           countIncrementalSlides: false
       });
-        window['slideshow'] = slideshow;
+      mermaid.initialize({
+        startOnLoad: false,
+        cloneCssStyles: false
+      });
+      function initMermaid(s) {
+          var diagrams = document.querySelectorAll('.mermaid');
+          var i;
+          for(i=0;i<diagrams.length;i++){
+            if(diagrams[i].offsetWidth>0){
+              mermaid.init(undefined, diagrams[i]);
+          }
+        }
+      }
+      slideshow.on('afterShowSlide', initMermaid);
+      initMermaid(slideshow.getSlides()[slideshow.getCurrentSlideIndex()]);
+      window['slideshow'] = slideshow;
 
       // extract the embedded styling from ansi spans
       $('code.terminal span.hljs-ansi').replaceWith(function(i, x) {
