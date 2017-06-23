@@ -28,6 +28,16 @@ layout: false
 * Developed since late February 2017
 
 ---
+
+## ChainerCV Contributors
+
+* Yusuke Niitani ([@yuyu2172](https://github.com/yuyu2172))
+* Toru Ogawa ([@hakuyume](https://github.com/hakuyume))
+* Shunta Saito ([@mitmul](https://github.com/mitmul))
+* Masaki Saito ([@rezoo](https://github.com/rezoo))
+* and more...
+
+---
 class: split-30
 
 ## Why we develop ChainerCV?
@@ -67,7 +77,7 @@ class: split-333
 
 template: inverse
 
-# .x-large[Easy-to-use Implementation]
+# .x-large[1: Easy-to-use Implementation]
 
 ---
 
@@ -131,7 +141,7 @@ class: split-40
 
 ## Potential applications
 
-#### As a building block for other networks
+#### Easy-to-use implementation enables to be a building block for other networks
 
 .column[
 .small[
@@ -149,7 +159,7 @@ class: split-40
 
 template: inverse
 
-# .large[Provide Tools for Training Networks]
+# .large[2: Provide Tools for Training Networks]
 
 ---
 
@@ -157,7 +167,7 @@ template: inverse
 
 
 * `chainer.training` provides training utilities for general machine learning tasks.
-* But, when we apply it to advanced tasks, additional tools are sometimes necessary.
+* It is useful, but when we use it in our research, additional tools are sometimes necessary.
 
 <!-- Add a slide on how learning a machine software components -->
 
@@ -175,7 +185,7 @@ C-->F[Evaluation]
 
 
 * `chainer.training` provides training utilities for general machine learning tasks.
-* But, when we apply it to advanced tasks, additional tools are sometimes necessary.
+* It is useful, but when we use it in our research, additional tools are sometimes necessary.
 
 <!-- Add a slide on how learning a machine software components -->
 
@@ -449,14 +459,14 @@ plot.show()
 
 --
 
-**.red[This is problemetic for developing and comparing new ideas to the existing ones.]**
+**.red[This is problematic for developing and comparing new ideas to the existing ones.]**
 
 ---
 
 ## ChainerCV for reproducible research
 
 - We carefully ensured that all models provided with ChainerCV can reproduce the performances on par with the original paper results.
-- When we change some part of the algorithm from the original implementation, we surely document those changes.
+- When we change any part of the algorithm from the original implementation, we surely document those changes.
 
 #### Faster R-CNN
 
@@ -515,15 +525,9 @@ See also: [Debug TensorFlow Models with tfdbg (@Google Developers Blog)](https:/
 ]
 -->
 
-## ChainerCV Contributors
-
-* Yusuke Niitani ([@yuyu2172](https://github.com/yuyu2172))
-* Toru Ogawa ([@hakuyume](https://github.com/hakuyume))
-* Shunta Saito ([@mitmul](https://github.com/mitmul))
-* Masaki Saito ([@rezoo](https://github.com/rezoo))
-* and more...
-
 ---
+name: last-page
+class: no-number
 
 ## Concluding Remarks
 
@@ -535,13 +539,10 @@ We have talked about the goals of ChainerCV and some functionalities.
 - It will support researchers and engineers who try to extend conventional methods with new ideas.
 
 
----
-name: last-page
-class: center, middle, no-number
+.center[.middle[## Thank You!]]
 
-## Thank You!
 <!--#### [@yuyu2172][Yusuke]-->
 
-.footnote[Slideshow created using [remark](http://github.com/gnab/remark).]
+<!-- .footnote[Slideshow created using [remark](http://github.com/gnab/remark).] -->
 
 <!-- vim: set ft=pandoc -->
