@@ -54,12 +54,13 @@ class: split-30
 ]
 
 ---
+class: split-333
 
 ## Goals of ChainerCV
 
-1. Easy-to-use Implementation
-2. Provide Tools for Training Networks
-3. Efforts on Reproducible Research
+1. .large[Easy-to-use Implementation]
+2. .large[Provide Tools for Training Networks]
+3. .large[Efforts on Reproducible Research]
 <!-- 4. Comparison and Conclusions -->
 
 ---
