@@ -413,7 +413,7 @@ Internally, the evaluator runs three operations:
 
 template: inverse
 
-# .large[Efforts on Reproducible Research]
+# .large[3: Efforts on Reproducible Research]
 
 ---
 <!-- THIS SLIDED IS NOT REALLY NECESSARY
@@ -447,8 +447,6 @@ plot.show()
 ```
 
 -->
-
-
 
 ## Bad implementations *in the wild*
 
