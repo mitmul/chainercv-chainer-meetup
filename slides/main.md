@@ -503,8 +503,6 @@ template: inverse
 
 This comparison is valid as of June 10th, 2017.
 
----
-
 <!-- Add a demo if you want to at the first chapter
 
 ## `tfdbg`: Screencast and Demo!
