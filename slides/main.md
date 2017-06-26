@@ -77,7 +77,7 @@ class: split-333
 
 template: inverse
 
-# .x-large[1: Easy-to-use Implementation]
+# .large[1: Easy-to-use Implementation]
 
 ---
 
